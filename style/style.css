@@ -2,4 +2,18 @@
 
 @theme {
     --color-primaria:#121063;
+
+    --animate-floatUp: floatUp 2s infinite;
+
+    @keyframes floatUp {
+        0% {
+            transform: translatey(0px);
+        }
+        50%{
+            transform: translatey(-8px);
+        }
+        100%{
+            transform: translatey(0px);
+        }
+    }
 }
