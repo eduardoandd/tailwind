@@ -5,6 +5,10 @@
 
     --animate-floatUp: floatUp 2s infinite;
 
+     --background-image: url('/src/assets/bguber.png');
+
+    
+
     @keyframes floatUp {
         0% {
             transform: translatey(0px);
