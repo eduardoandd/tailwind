@@ -4,8 +4,9 @@
     --color-primaria:#121063;
 
     --animate-floatUp: floatUp 2s infinite;
-
-     --background-image: url('/src/assets/bguber.png');
+    --animate-floatRight: floatRight 2s infinite;
+    --animate-opacityPulse: opacityPulse 2s infinite;
+    --background-image: url('/src/assets/bguber.png');
 
     
 
@@ -20,4 +21,36 @@
             transform: translatey(0px);
         }
     }
+
+    @keyframes floatRight {
+        0%{
+            transform: translatex(0px);
+        }
+        50%{
+            transform:translatex(8px);
+        }
+        100%{
+            transform: translatex(0px);
+        }
+    }
+
+    @keyframes opacityPulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.7; }
+        100% { opacity: 1; }
+    }
+
+    /* @layer components {
+        .card {
+            background-color: white;
+            width: 100px;
+            height: 100px;
+        }
+    } */
+
+    /* @layer base {
+        h1{
+            @apply text-4xl;
+        }
+    } */
 }
